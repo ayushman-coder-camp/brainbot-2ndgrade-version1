@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+body{
+    font-family: 'Alkatra', sans-serif;
+    background: linear-gradient(to right bottom, #ff6600, #88097d);
+    background-repeat: no-repeat;
+    height: 98.3vh;
+}
+
+#app-container{
+    background: #fff;
+    width: 30%;
+    padding: 20px;
+    border-radius: 4px;
+    transform: translate(100%, 10%);
+}
+
+#app-container h1{
+    border-bottom: 2px solid #3e6371;
+}
+
+#anwser-btns button{
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: 5px solid #3e6371;
+    margin-bottom: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#anwser-btns button:hover:not([disabled]){
+    background: #3e6371;
+    color: #fff;
+}
+
+#anwser-btns button:disabled{
+    cursor: no-drop;
+}
+
+#next-btn{
+    padding: 20px;
+    width: 25%;
+    background: #3e6371;
+    margin-top: 15px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 625px){
+    #app-container{
+        transform: translate(40%, 10%);
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 1283px){
+    body{
+        height: 99.4vh;
+    }
+}
